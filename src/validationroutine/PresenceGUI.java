@@ -32,40 +32,16 @@ public class PresenceGUI extends javax.swing.JFrame {
         btnValidatePresence = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblPresenceTitle.setText("Input something to see if it is present.");
+        getContentPane().add(lblPresenceTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 11, -1, -1));
 
         txtfldInputHere.setText("Input here");
+        getContentPane().add(txtfldInputHere, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 36, -1, -1));
 
         btnValidatePresence.setText("Validate");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(108, 108, 108)
-                        .addComponent(lblPresenceTitle))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(146, 146, 146)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnValidatePresence)
-                            .addComponent(txtfldInputHere, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(109, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblPresenceTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtfldInputHere, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnValidatePresence)
-                .addContainerGap(215, Short.MAX_VALUE))
-        );
+        getContentPane().add(btnValidatePresence, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 62, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
